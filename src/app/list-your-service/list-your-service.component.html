@@ -1,0 +1,25 @@
+        <div class="list-your-service">
+            <div class="left-side">
+                <div class="download">
+                    <img src="/assets/images/marity_square_logo_small.svg" alt="">
+                    <span class="download-label">Marity Business</span>
+
+                </div>
+                <h1 class="serv-title">Listează cu ușurință orice tip de serviciu</h1>
+                <div class="serv-descr">
+                    De la locatii, servicii foto-video, formatie,Dj, până la servicii de catering și aranjamente
+                    florale, astfel încât să poți ajunge la un public mai larg și să-ți dezvolți afacerea.
+                </div>
+            </div>
+            <button class="button-serv">Listeaza-ti serviciul acum</button>
+        </div>
+        <div class="services-slider">
+            <swiper [config]="secondSwipperConfig">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" *ngFor="let service of servicesArray;index as index">
+                        <img [src]="service?.serviceimageSource" alt="Service img{{index}}">
+                        <span class="service-label">{{service?.serviceTitle}}</span>
+                    </div>
+                </div>
+            </swiper>
+        </div>

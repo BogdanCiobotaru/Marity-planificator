@@ -1,0 +1,11 @@
+    <div class="phones-frames-wrapper">
+        <div *ngFor="let phoneFrame of phoneFrameContentArray" class="phone-frame-container"
+            [ngClass]="[phoneFrame.className]">
+            <div class="tit-wrapper">
+                <div class="title">{{phoneFrame.title}}</div>
+                <div class="description">{{phoneFrame.description}}</div>
+                <button class="button-start" *ngIf="phoneFrame.buttonText">{{phoneFrame.buttonText}}</button>
+            </div>
+            <img class="phone-image" [src]="phoneFrame.pictureSrc" alt="phone_picture">
+        </div>
+    </div>

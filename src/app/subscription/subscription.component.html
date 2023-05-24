@@ -1,0 +1,38 @@
+<div class="content">
+    <img class="sub-cont-logo" src="/assets/images/marity_square_logo.svg" alt="">
+    <div class="logo-descr"> Marity business</div>
+    <h1 class="subscr-title">Alege abonamentul care ți se potrivește.</h1>
+    <div class="subtitle">Fără angajament. Te poți dezabona oricând.</div>
+    <div class="prices">
+        <div class="price-wrap">
+            <div class="prices-text">Business Free <br> 0 lei/Luna</div>
+            <button class="button-price">Incearca acum</button>
+        </div>
+        <div class="price-wrap">
+            <div class="prices-text">Business Plus <br> 15 lei/Luna</div>
+            <button class="button-price">Incearca acum</button>
+        </div>
+        <div class="price-wrap">
+            <div class="prices-text">Business Pro <br> 25 lei/Luna</div>
+            <button class="button-price">Incearca acum</button>
+        </div>
+    </div>
+
+    <div class="prices-only-mobile">
+        <div class="prices-text">Business Free </div>
+        <div class="prices-text">Business Plus</div>
+        <div class="prices-text">Business Pro </div>
+    </div>
+
+
+    <div *ngFor="let subscription of subscriptionDescriptionsArray" class="subscr-description">
+        <div class="description-text">{{subscription.text}}</div>
+        <div class="checks-container">
+            <div class="free" *ngIf="subscription.free"><img src="/assets/images/icons/checkmark_black.svg" alt="">
+            </div>
+            <div class="plus" *ngIf="subscription.plus"><img src="/assets/images/icons/checkmark_black.svg" alt="">
+            </div>
+            <div class="pro" *ngIf="subscription.pro"><img src="/assets/images/icons/checkmark_black.svg" alt=""></div>
+        </div>
+    </div>
+</div>

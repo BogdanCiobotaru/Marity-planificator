@@ -1,0 +1,323 @@
+/* You can add global styles to this file, and also import other style files */
+@import "/src/assets/css/variables.scss";
+
+.header {
+  height: 56px;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0 16px;
+
+  .navigation-wrapper {
+    width: 940px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .marity-business-logo {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      background: linear-gradient(180deg, #ff2c62 0%, #724c9b 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .navigation-items {
+      display: flex;
+      gap: 48px;
+
+      .navigation-item {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 14px;
+
+        &.active {
+          color: #d94a8c;
+        }
+      }
+
+      @media (max-width: $max-width-for-mobile) {
+        display: none;
+      }
+    }
+
+    .header-list-button {
+      cursor: pointer;
+      color: white;
+      padding: 8px 16px;
+      background: linear-gradient(275.63deg, #724c9b 0%, #ff2c62 100%);
+      border-radius: 12px;
+
+      @media (max-width: $max-width-for-mobile) {
+        display: none;
+      }
+    }
+  }
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .logo-marity-mid {
+    margin-top: 64px;
+
+    @media (max-width: $max-width-for-mobile) {
+      width: 56px;
+    }
+  }
+
+  .marity-business-label {
+    margin: 12px 0 24px;
+  }
+
+  .marity-download-buttons {
+    display: flex;
+    gap: 8px;
+
+    @media (max-width: $max-width-for-mobile) {
+      gap: 24px;
+    }
+  }
+
+  .title-main-label {
+    max-width: 720px;
+    text-align: center;
+    margin-top: 24px;
+    font-weight: 700;
+    font-size: 88px;
+    line-height: 105px;
+
+    @media (max-width: $max-width-for-mobile) {
+      font-weight: 700;
+      font-size: 44px;
+      line-height: 53px;
+      max-width: 342px;
+    }
+  }
+
+  .subtitle-label {
+    max-width: 600px;
+    margin-top: 24px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+
+    @media (max-width: $max-width-for-mobile) {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      max-width: 342px;
+    }
+  }
+
+  .header-list-button-mobile {
+    color: white;
+    padding: 16px 16px;
+    background: linear-gradient(275.63deg, #724c9b 0%, #ff2c62 100%);
+    border-radius: 12px;
+
+    @media (min-width: $max-width-for-mobile) {
+      display: none;
+    }
+  }
+}
+
+.try-free-container {
+  padding: 54px 32px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-top: 84px;
+  height: 560px;
+  background-image: url("/assets/images/candles_image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .try-free-content {
+    width: 936px;
+
+    .logo-label {
+      display: flex;
+      align-items: center;
+      color: white;
+
+      @media (max-width: $max-width-for-mobile) {
+        display: none;
+      }
+
+      .small-marity-logo {
+        margin-right: 8px;
+      }
+    }
+
+    .text-button {
+      margin-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 60px;
+
+      .text-description {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38px;
+        color: white;
+
+        @media (max-width: $max-width-for-mobile) {
+          text-align: center;
+          font-weight: 700;
+          font-size: 32px;
+          line-height: 38px;
+        }
+      }
+
+      .button-white {
+        min-width: 178px;
+        background: #ffffff;
+        border-radius: 20px;
+        padding: 16px 24px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+      }
+
+      @media (max-width: $max-width-for-mobile) {
+        flex-direction: column;
+      }
+    }
+  }
+
+  @media (max-width: $max-width-for-mobile) {
+    margin-top: 40px;
+    // padding: 24px 16px;
+  }
+}
+
+.phones-swiper {
+  .swiper-wrapper {
+    transition-timing-function: linear;
+    padding: 53px;
+
+    .swiper-slide {
+      width: auto;
+
+      .phone-frame {
+        @media (max-width: $max-width-for-mobile) {
+          height: 487px;
+        }
+      }
+
+      &:nth-child(odd) {
+        margin-top: 53px;
+      }
+    }
+  }
+}
+
+.schedule-container {
+  padding: 90px 32px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 84px;
+  height: 560px;
+  background-image: url("/assets/images/wedding_hands_rings.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (max-width: $max-width-for-mobile) {
+    height: fit-content;
+    padding: 32px 16px;
+    margin-bottom: 0;
+  }
+
+  .schedule-content {
+    width: 936px;
+    height: 100%;
+    display: flex;
+    position: relative;
+
+    @media (max-width: $max-width-for-mobile) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .text-description {
+      align-self: flex-start;
+      color: white;
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 76px;
+
+      @media (max-width: $max-width-for-mobile) {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38px;
+        text-align: center;
+        margin-bottom: 16px;
+      }
+    }
+
+    .button-transparent {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      min-width: 256px;
+      border: 1px solid white;
+      background-color: transparent;
+      color: white;
+      border-radius: 20px;
+      padding: 16px 24px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      align-self: flex-end;
+
+      @media (max-width: $max-width-for-mobile) {
+        position: relative;
+        align-self: center;
+      }
+    }
+  }
+}
+.titles-container {
+  @media (max-width: $max-width-for-mobile) {
+    padding: 24px 16px;
+  }
+
+  .discover-label {
+    text-align: center;
+    max-width: 652px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 76px;
+    background: linear-gradient(180deg, #ff2c62 0%, #724c9b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: auto;
+
+    @media (max-width: $max-width-for-mobile) {
+      font-weight: 700;
+      font-size: 44px;
+      line-height: 53px;
+      width: auto;
+    }
+  }
+}
+
+.gray-background-section {
+  background-color: #f2f2f2;
+  padding-bottom: 80px;
+
+  @media (max-width: $max-width-for-mobile) {
+    padding-bottom: 16px;
+  }
+}

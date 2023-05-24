@@ -1,0 +1,89 @@
+<section>
+    <header class=" header">
+        <div class="navigation-wrapper">
+            <div class="marity-business-logo">Marity Business</div>
+            <div class="navigation-items">
+                <span class="navigation-item">Marity</span><span class="navigation-item">Planificator</span><span
+                    class="navigation-item active">Business</span>
+            </div>
+            <button class="header-list-button">Listeaza acum</button>
+        </div>
+    </header>
+</section>
+
+<section>
+    <div class="title-container">
+        <img class="logo-marity-mid" src="/assets/images/marity_square_logo.svg" alt="marity_logo">
+        <span class="marity-business-label">Marity business</span>
+
+        <div class="marity-download-buttons">
+            <img src="/assets/images/download_button_app_store.svg" alt="" class="download-logo"><img
+                src="/assets/images/download_button_google_play.svg" alt="" class="download-logo">
+
+        </div>
+
+        <h1 class="title-main-label">
+            Aliniază-te cu tendințele actuale.
+        </h1>
+        <p class="subtitle-label">Conceput special pentru profesioniștii din industria nunților,
+            cu o interfață simplă și o performanță excelentă.</p>
+
+        <button class="header-list-button-mobile">Listeaza acum</button>
+
+
+    </div>
+    <div class="try-free-container">
+        <div class="try-free-content">
+            <div class="logo-label">
+                <img class="small-marity-logo" src="/assets/images/marity_square_logo_small.svg" alt="">
+                <span>Marity Business</span>
+            </div>
+            <div class="text-button">
+                <span class="text-description">Gestionează-ți activitățile de oriunde te-ai afla, direct de
+                    pe telefonul
+                    tău.</span>
+                <button class="button-white ">Încearcă gratis</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="phones-swiper">
+        <swiper [config]="swipperConfig">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" *ngFor="let swipe of phoneFrameContentArray;index as index">
+                    <img class="phone-frame" [src]="swipe.pictureSrc" alt="img{{index}}">
+                </div>
+            </div>
+        </swiper>
+    </div>
+</section>
+
+<section>
+    <div class="schedule-container">
+        <div class="schedule-content">
+            <span class="text-description">Cu Marity Business îți poți umple cu ușurință programul
+                cu noi clienți.</span>
+            <button class="button-transparent ">Downloadeaza aplicatia</button>
+        </div>
+    </div>
+</section>
+
+<div class="titles-container">
+    <h1 class="discover-label "> Descoperă toate funcționalitățile uimitoare</h1>
+</div>
+
+<section class="gray-background-section">
+    <app-phone-frames></app-phone-frames>
+    <app-list-your-service></app-list-your-service>
+</section>
+
+<section>
+    <app-subscription></app-subscription>
+</section>
+
+<section>
+    <app-question-answear></app-question-answear>
+</section>
+<app-footer></app-footer>
