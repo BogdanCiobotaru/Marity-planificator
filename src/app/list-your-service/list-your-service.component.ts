@@ -22,7 +22,7 @@ export class ListYourServiceComponent {
     },
     {
       serviceimageSource: '/assets/images/Services/catering.svg',
-      serviceTitle: ''
+      serviceTitle: 'Catering'
     },
     {
       serviceimageSource: '/assets/images/Services/decorations.svg',

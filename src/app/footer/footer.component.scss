@@ -86,11 +86,9 @@
     }
 
     .download {
-      @media (max-width: $max-width-for-mobile) {
-        display: flex;
-        gap: 8px;
-        align-items: center;
-      }
+      display: flex;
+      gap: 8px;
+      align-items: center;
     }
   }
 }

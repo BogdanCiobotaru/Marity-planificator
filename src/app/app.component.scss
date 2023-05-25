@@ -15,15 +15,15 @@
     align-items: center;
     justify-content: space-between;
 
-    .marity-business-logo {
-      font-weight: 700;
-      font-size: 24px;
-      line-height: 29px;
-      background: linear-gradient(180deg, #ff2c62 0%, #724c9b 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
+    // .marity-business-logo {
+    //   font-weight: 700;
+    //   font-size: 24px;
+    //   line-height: 29px;
+    //   background: linear-gradient(180deg, #ff2c62 0%, #724c9b 100%);
+    //   -webkit-background-clip: text;
+    //   -webkit-text-fill-color: transparent;
+    //   background-clip: text;
+    // }
 
     .navigation-items {
       display: flex;
@@ -33,9 +33,21 @@
         font-weight: 700;
         font-size: 12px;
         line-height: 14px;
+        position: relative;
+        cursor: pointer;
 
         &.active {
-          color: #d94a8c;
+          color: #724c9b;
+
+          &::before {
+            content: "";
+            position: absolute;
+            bottom: -21px;
+            border-bottom: 5px solid #724c9b;
+            width: 100%;
+            display: block;
+            border-radius: 4px 4px 0 0;
+          }
         }
       }
 
@@ -74,11 +86,15 @@
 
   .marity-business-label {
     margin: 12px 0 24px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
   }
 
   .marity-download-buttons {
     display: flex;
     gap: 8px;
+    margin-bottom: 24px;
 
     @media (max-width: $max-width-for-mobile) {
       gap: 24px;
@@ -86,12 +102,15 @@
   }
 
   .title-main-label {
-    max-width: 720px;
-    text-align: center;
-    margin-top: 24px;
     font-weight: 700;
     font-size: 88px;
     line-height: 105px;
+    text-align: center;
+    background: linear-gradient(180deg, #ff2c62 0%, #724c9b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    max-width: 700px;
 
     @media (max-width: $max-width-for-mobile) {
       font-weight: 700;
@@ -101,134 +120,184 @@
     }
   }
 
-  .subtitle-label {
-    max-width: 600px;
-    margin-top: 24px;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
-    text-align: center;
+  // .subtitle-label {
+  //   max-width: 600px;
+  //   margin-top: 24px;
+  //   font-weight: 500;
+  //   font-size: 24px;
+  //   line-height: 29px;
+  //   text-align: center;
+
+  //   @media (max-width: $max-width-for-mobile) {
+  //     font-weight: 500;
+  //     font-size: 14px;
+  //     line-height: 17px;
+  //     max-width: 342px;
+  //   }
+  // }
+
+  // .header-list-button-mobile {
+  //   color: white;
+  //   padding: 16px 16px;
+  //   background: linear-gradient(275.63deg, #724c9b 0%, #ff2c62 100%);
+  //   border-radius: 12px;
+
+  //   @media (min-width: $max-width-for-mobile) {
+  //     display: none;
+  //   }
+  // }
+  .just-married-pic {
+    margin: 24px 0 72px;
+    padding: 0 64px;
+    max-width: 905px;
+    width: 100%;
 
     @media (max-width: $max-width-for-mobile) {
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 17px;
-      max-width: 342px;
+      width: 100%;
+      padding: 0 16px;
+      max-width: 500px;
+      min-width: 300px;
     }
   }
 
-  .header-list-button-mobile {
-    color: white;
-    padding: 16px 16px;
-    background: linear-gradient(275.63deg, #724c9b 0%, #ff2c62 100%);
-    border-radius: 12px;
+  .choose-supplier {
+    text-align: center;
+    max-width: 700px;
+    margin-bottom: 24px;
 
-    @media (min-width: $max-width-for-mobile) {
-      display: none;
+    .title-s {
+      margin: 0 auto;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 38px;
+      margin-bottom: 18px;
+    }
+
+    .subtitile-s {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      opacity: 0.6;
+    }
+
+    @media (max-width: $max-width-for-mobile) {
+      max-width: 290px;
     }
   }
 }
 
-.try-free-container {
-  padding: 54px 32px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  margin-top: 84px;
-  height: 560px;
-  background-image: url("/assets/images/candles_image.png");
+// .try-free-container {
+//   padding: 54px 32px;
+//   display: flex;
+//   align-items: flex-end;
+//   justify-content: center;
+//   margin-top: 24px;
+//   height: 560px;
+//   background-image: url("/assets/images/candles_image.png");
+//   background-repeat: no-repeat;
+//   background-size: cover;
+
+//   // .try-free-content {
+//   //   width: 936px;
+
+//   //   .logo-label {
+//   //     display: flex;
+//   //     align-items: center;
+//   //     color: white;
+
+//   //     @media (max-width: $max-width-for-mobile) {
+//   //       display: none;
+//   //     }
+
+//   //     .small-marity-logo {
+//   //       margin-right: 8px;
+//   //     }
+//   //   }
+
+//   //   .text-button {
+//   //     margin-top: 24px;
+//   //     display: flex;
+//   //     justify-content: space-between;
+//   //     align-items: center;
+//   //     gap: 60px;
+
+//   //     .text-description {
+//   //       font-weight: 700;
+//   //       font-size: 32px;
+//   //       line-height: 38px;
+//   //       color: white;
+
+//   //       @media (max-width: $max-width-for-mobile) {
+//   //         text-align: center;
+//   //         font-weight: 700;
+//   //         font-size: 32px;
+//   //         line-height: 38px;
+//   //       }
+//   //     }
+
+//   //     .button-white {
+//   //       min-width: 178px;
+//   //       background: #ffffff;
+//   //       border-radius: 20px;
+//   //       padding: 16px 24px;
+//   //       font-weight: 500;
+//   //       font-size: 18px;
+//   //       line-height: 22px;
+//   //     }
+
+//   //     @media (max-width: $max-width-for-mobile) {
+//   //       flex-direction: column;
+//   //     }
+//   //   }
+//   // }
+
+//   @media (max-width: $max-width-for-mobile) {
+//     margin-top: 40px;
+//     // padding: 24px 16px;
+//   }
+// }
+
+// .phones-swiper {
+//   .swiper-wrapper {
+//     transition-timing-function: linear;
+//     padding: 53px;
+
+//     .swiper-slide {
+//       width: auto;
+
+//       .phone-frame {
+//         @media (max-width: $max-width-for-mobile) {
+//           height: 487px;
+//         }
+//       }
+
+//       &:nth-child(odd) {
+//         margin-top: 53px;
+//       }
+//     }
+//   }
+// }
+
+.schedule-for-mobile {
+  height: 215px;
+  background-image: url("/assets/images/wedding_day.svg");
   background-repeat: no-repeat;
   background-size: cover;
 
-  .try-free-content {
-    width: 936px;
-
-    .logo-label {
-      display: flex;
-      align-items: center;
-      color: white;
-
-      @media (max-width: $max-width-for-mobile) {
-        display: none;
-      }
-
-      .small-marity-logo {
-        margin-right: 8px;
-      }
-    }
-
-    .text-button {
-      margin-top: 24px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 60px;
-
-      .text-description {
-        font-weight: 700;
-        font-size: 32px;
-        line-height: 38px;
-        color: white;
-
-        @media (max-width: $max-width-for-mobile) {
-          text-align: center;
-          font-weight: 700;
-          font-size: 32px;
-          line-height: 38px;
-        }
-      }
-
-      .button-white {
-        min-width: 178px;
-        background: #ffffff;
-        border-radius: 20px;
-        padding: 16px 24px;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 22px;
-      }
-
-      @media (max-width: $max-width-for-mobile) {
-        flex-direction: column;
-      }
-    }
-  }
-
-  @media (max-width: $max-width-for-mobile) {
-    margin-top: 40px;
-    // padding: 24px 16px;
-  }
-}
-
-.phones-swiper {
-  .swiper-wrapper {
-    transition-timing-function: linear;
-    padding: 53px;
-
-    .swiper-slide {
-      width: auto;
-
-      .phone-frame {
-        @media (max-width: $max-width-for-mobile) {
-          height: 487px;
-        }
-      }
-
-      &:nth-child(odd) {
-        margin-top: 53px;
-      }
-    }
+  @media (min-width: $max-width-for-mobile) {
+    display: none;
   }
 }
 
 .schedule-container {
+  position: relative;
   padding: 90px 32px;
   display: flex;
   align-items: flex-end;
   justify-content: center;
   margin-bottom: 84px;
   height: 560px;
-  background-image: url("/assets/images/wedding_hands_rings.webp");
+  background-image: url("/assets/images/wedding_day.svg");
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -236,6 +305,8 @@
     height: fit-content;
     padding: 32px 16px;
     margin-bottom: 0;
+    background-image: none;
+    background-color: black;
   }
 
   .schedule-content {
@@ -250,7 +321,7 @@
     }
 
     .text-description {
-      align-self: flex-start;
+      align-self: center;
       color: white;
       font-weight: 700;
       font-size: 64px;
@@ -286,7 +357,22 @@
       }
     }
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+      to top,
+      rgb(0 0 0 / 62%),
+      rgba(0, 0, 0, 0)
+    );
+  }
 }
+
 .titles-container {
   @media (max-width: $max-width-for-mobile) {
     padding: 24px 16px;
@@ -302,7 +388,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    margin: auto;
+    margin: 80px auto 16px;
 
     @media (max-width: $max-width-for-mobile) {
       font-weight: 700;

@@ -9,34 +9,47 @@ import { PhoneFrameContent } from '../phone-frame.interface';
 export class PhoneFramesComponent {
   public phoneFrameContentArray: PhoneFrameContent[] = [
     {
-      title: 'Listează-ți serviciul',
-      description: 'Cu Marity Business, poți lista și gestiona ușor serviciile tale oferite, astfel încât să fii mereu organizat și pregătit pentru clienții noi.',
+      title: 'Planificatorul de nunți Marity este intuitiv și ușor de folosit.',
+      description: 'Planificarea evenimentelor poate fi o sarcină dificilă, însă cu ajutorul planificatorului de evenimente de la Marity Business poți să găsești informații generale despre toate serviciile necesare pentru ca evenimentul tău să fie un succes.De la locații de evenimente, la servicii de catering, decor și muzică, ai toate informațiile la îndemână într-un singur loc.',
+      mobileDescr:'Ai toate informațiile la îndemână într-un singur loc.',
       pictureSrc: '/assets/images/phone_frames/phone_frame_1.svg',
-      className: 'half-width'
+      className: 'full-width',
+      buttonText: 'Încearca acum',
+      buttonArrow: '/assets/images/icons/arrow_right.svg',
+      showOnMobile: false
     },
     {
-      title: 'Creează-ți propria ta pagină de prezentare',
-      description: 'Încarcă fotografii, alege facilități, scrie o descriere și răspunde la întrebări frecvente cu Marity Business',
+      title: 'Gestionare invitati',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt.',
       pictureSrc: '/assets/images/phone_frames/phone_frame_2.svg',
       className: 'half-width'
     },
     {
-      title: 'Creează promoții personalizate și atrage noi clienți, mărește-ți aria de activitate și dezvoltă-ți afacerea cu Marity Business',
-      description: 'Intuitiv și ușor de utilizat, poți să-ți promovezi serviciile într-un mod personalizat și să ajungi la publicul potrivit în mod eficient.Astfel, poți să-ți dezvolți afacerea și să crești veniturile într-un mod sustenabil și în creștere.',
+      title: 'Asezarea la mese',
+      description: 'Lorem ipsum dolor sit amet, onsectetur adipiscing elit, sed do eiusmod incididunt.',
       pictureSrc: '/assets/images/phone_frames/phone_frame_3.svg',
-      className: 'full-width',
-      buttonText: 'Începe acum'
-    },
-    {
-      title: 'Gestionare clienți',
-      description: 'Gestionează-ți clienții și comunică cu ei în timp real prin intermediul funcției noastre de Chat.',
-      pictureSrc: '/assets/images/phone_frames/phone_frame_4.svg',
       className: 'half-width'
     },
     {
-      title: 'Smart calendar',
-      description: 'Planifica și organizează cu ușurință evenimentele tale,  întâlniri cu clienții, conferințe și petreceri.',
+      title: 'Wedding Wall, singurul loc in care gasesti inspiratie de la furnizori in timp real. Un pinterest dedicat nuntilor.',
+      description: 'Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod incididunt.',
+      pictureSrc: '/assets/images/phone_frames/phone_frame_4.svg',
+      className: 'full-width',
+      buttonText: 'Încearca acum',
+      buttonArrow: '/assets/images/icons/arrow_right.svg',
+      showOnMobile: true
+
+    },
+    {
+      title: 'Checklist',
+      description: 'Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod incididunt.',
       pictureSrc: '/assets/images/phone_frames/phone_frame_5.svg',
+      className: 'half-width'
+    },
+    {
+      title: 'Site de nunta si invitatii online',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt.',
+      pictureSrc: '/assets/images/phone_frames/phone_frame_6.svg',
       className: 'half-width'
     }
   ]

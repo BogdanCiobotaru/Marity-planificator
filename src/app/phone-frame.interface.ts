@@ -1,9 +1,12 @@
 export interface PhoneFrameContent {
     title: string,
     description: string,
+    mobileDescr?:string,
     pictureSrc: string,
-    className: string
-    buttonText?: string
+    className: string,
+    buttonText?: string,
+    buttonArrow?: string,
+    showOnMobile?: boolean,
 }
 
 export interface AnswearsAndQuestions {
