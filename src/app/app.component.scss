@@ -67,10 +67,9 @@
 
     .header-list-button {
       cursor: pointer;
-      color: white;
-      padding: 8px 16px;
-      background: linear-gradient(275.63deg, #724c9b 0%, #ff2c62 100%);
-      border-radius: 12px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
 
       @media (max-width: $max-width-for-mobile) {
         display: none;
@@ -144,32 +143,6 @@
     }
   }
 
-  // .subtitle-label {
-  //   max-width: 600px;
-  //   margin-top: 24px;
-  //   font-weight: 500;
-  //   font-size: 24px;
-  //   line-height: 29px;
-  //   text-align: center;
-
-  //   @media (max-width: $max-width-for-mobile) {
-  //     font-weight: 500;
-  //     font-size: 14px;
-  //     line-height: 17px;
-  //     max-width: 342px;
-  //   }
-  // }
-
-  // .header-list-button-mobile {
-  //   color: white;
-  //   padding: 16px 16px;
-  //   background: linear-gradient(275.63deg, #724c9b 0%, #ff2c62 100%);
-  //   border-radius: 12px;
-
-  //   @media (min-width: $max-width-for-mobile) {
-  //     display: none;
-  //   }
-  // }
   .just-married-pic {
     margin: 24px 0 72px;
     padding: 0 64px;
