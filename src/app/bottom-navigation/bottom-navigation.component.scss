@@ -1,0 +1,32 @@
+@import "/src/assets/css/variables.scss";
+
+.b-navigation-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 24px 30px;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 3;
+  align-items: center;
+  border: 1px solid #eeedfe;
+
+  @media (min-width: $max-width-for-mobile) {
+    display: none;
+  }
+
+  .menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: baseline;
+    gap: 4px;
+
+    .label {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 21px;
+    }
+  }
+}

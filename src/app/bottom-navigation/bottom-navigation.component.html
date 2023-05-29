@@ -1,1 +1,6 @@
-<p>bottom-navigation works!</p>
+<div class="b-navigation-wrapper">
+    <div *ngFor="let icon of bottomNavigationIcons" class="menu-item">
+        <img [src]="icon.src" alt="">
+        <span class="label" >{{icon.text}}</span>
+    </div>
+</div>

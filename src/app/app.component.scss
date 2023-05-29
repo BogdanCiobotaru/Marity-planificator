@@ -15,15 +15,24 @@
     align-items: center;
     justify-content: space-between;
 
-    // .marity-business-logo {
-    //   font-weight: 700;
-    //   font-size: 24px;
-    //   line-height: 29px;
-    //   background: linear-gradient(180deg, #ff2c62 0%, #724c9b 100%);
-    //   -webkit-background-clip: text;
-    //   -webkit-text-fill-color: transparent;
-    //   background-clip: text;
-    // }
+    .mar-logo {
+      @media (max-width: $max-width-for-mobile) {
+        display: none;
+      }
+    }
+
+    .marity-business-logo {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      display: flex;
+      align-items: center;
+      color: #724c9b;
+
+      @media (min-width: $max-width-for-mobile) {
+        display: none;
+      }
+    }
 
     .navigation-items {
       display: flex;
@@ -117,6 +126,21 @@
       font-size: 44px;
       line-height: 53px;
       max-width: 342px;
+    }
+  }
+
+  .button-try-now {
+    margin: 16px 0;
+    padding: 16px;
+    color: white;
+    background: linear-gradient(275.63deg, #724c9b 0%, #ff2c62 100%);
+    border-radius: 12px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+
+    @media (min-width: $max-width-for-mobile) {
+      display: none;
     }
   }
 
@@ -405,5 +429,11 @@
 
   @media (max-width: $max-width-for-mobile) {
     padding-bottom: 16px;
+  }
+}
+
+.ghost {
+  @media (min-width: $max-width-for-mobile) {
+    display: none;
   }
 }
