@@ -8,6 +8,7 @@ import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
 import { SubscriptionComponent } from './subscription/subscription.component';
 import { PhoneFramesComponent } from './phone-frames/phone-frames.component';
 import { ListYourServiceComponent } from './list-your-service/list-your-service.component';
+import { BottomNavigationComponent } from './bottom-navigation/bottom-navigation.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ListYourServiceComponent } from './list-your-service/list-your-service.
     FooterComponent,
     SubscriptionComponent,
     PhoneFramesComponent,
-    ListYourServiceComponent
+    ListYourServiceComponent,
+    BottomNavigationComponent
   ],
   imports: [
     BrowserModule,
