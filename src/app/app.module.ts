@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { QuestionAnswearComponent } from './question-answear/question-answear.component';
 import { FooterComponent } from './footer/footer.component';
 import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
-import { SubscriptionComponent } from './subscription/subscription.component';
 import { PhoneFramesComponent } from './phone-frames/phone-frames.component';
 import { ListYourServiceComponent } from './list-your-service/list-your-service.component';
 import { BottomNavigationComponent } from './bottom-navigation/bottom-navigation.component';
@@ -15,7 +14,6 @@ import { BottomNavigationComponent } from './bottom-navigation/bottom-navigation
     AppComponent,
     QuestionAnswearComponent,
     FooterComponent,
-    SubscriptionComponent,
     PhoneFramesComponent,
     ListYourServiceComponent,
     BottomNavigationComponent
