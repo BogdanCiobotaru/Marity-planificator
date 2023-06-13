@@ -10,13 +10,15 @@
 }
 
 .contents {
-  padding: 0 16px;
-  max-width: 936px;
+  padding: 80px 16px;
+  max-width: $max-content-width;
   margin: 0 auto;
 
-  @media screen and (max-width: $max-width-for-mobile) {
-    padding: 40px 16px;
+  @media screen and (max-width: 700px) {
+    padding: 40px 0;
+    max-width: $max-content-width-for-tablet;
   }
+
   .title-head {
     text-align: center;
     margin-bottom: 66px;

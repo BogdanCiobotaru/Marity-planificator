@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { PhoneFrameContent } from './phone-frame.interface';
 import { SwiperOptions } from 'swiper';
+import { HostListener } from '@angular/core';
+
 
 @Component({
   selector: 'app-root',
@@ -57,6 +59,14 @@ export class AppComponent {
     loop: true,
     speed: 7000,
   };
+  isScrollingUp = true;
+  lastScrollOffset = 0;
 
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    const currentScrollOffset = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    this.isScrollingUp = currentScrollOffset < this.lastScrollOffset;
+    this.lastScrollOffset = currentScrollOffset;
+  }
 
 }

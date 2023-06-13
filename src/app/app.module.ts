@@ -8,6 +8,7 @@ import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
 import { PhoneFramesComponent } from './phone-frames/phone-frames.component';
 import { ListYourServiceComponent } from './list-your-service/list-your-service.component';
 import { BottomNavigationComponent } from './bottom-navigation/bottom-navigation.component';
+import { BurgerMenuComponent } from './burger-menu/burger-menu.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { BottomNavigationComponent } from './bottom-navigation/bottom-navigation
     FooterComponent,
     PhoneFramesComponent,
     ListYourServiceComponent,
-    BottomNavigationComponent
+    BottomNavigationComponent,
+    BurgerMenuComponent
   ],
   imports: [
     BrowserModule,

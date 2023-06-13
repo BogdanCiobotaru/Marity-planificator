@@ -1,0 +1,22 @@
+<div class="navbar">
+  <div class="menu-icon" (click)="toggleDropdown()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+
+  <ul class="menu" [class.show]="showDropdown">
+    <span class="close-button" (click)="toggleDropdown()"><img src="/assets/images/icons/close_burger_button.svg"
+        alt=""></span>
+    <div class="nav-items-b">
+      <li class="burger-nav-item" (click)="closeDropdown('https://marity.ro/explore')">Furnizori</li>
+      <li class="burger-nav-item" (click)="closeDropdown('https://marity.ro')">Marity.ro</li>
+      <li class="burger-nav-item" (click)="closeDropdown('https://google.com')">360 Planner</li>
+      <li class="burger-nav-item" (click)="closeDropdown('https://business.marity.ro/')">Business</li>
+    </div>
+    <div class="marity-download-buttons">
+      <img src="/assets/images/download_button_google_play.svg" alt="" class="download-logo" /> <img
+        src="/assets/images/download_button_app_store.svg" alt="" class="download-logo" />
+    </div>
+  </ul>
+</div>

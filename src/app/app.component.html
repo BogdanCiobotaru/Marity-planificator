@@ -1,13 +1,16 @@
 <section>
-    <header class=" header">
+    <header class="header">
         <div class="navigation-wrapper">
             <img class="mar-logo" src="/assets/images/icons/m_logo.svg">
-            <div class="marity-business-logo">Marity planificator</div>
+            <div class="marity-business-logo">Marity Business</div>
             <div class="navigation-items">
-                <span class="navigation-item">Furnizori</span><span class="navigation-item">Marity</span><span
-                    class="navigation-item active">Planificator</span><span class="navigation-item">Business</span>
+                <span class="navigation-item">Furnizori</span>
+                <span class="navigation-item">Marity.ro</span>
+                <span class="navigation-item">360 Planner</span>
+                <span class="navigation-item active">Business</span>
             </div>
-            <button class="header-list-button">Devino Furnizor</button>
+            <button class="header-list-button">Începe acum</button>
+            <app-burger-menu class="burger-menu"></app-burger-menu>
         </div>
     </header>
 </section>
@@ -79,4 +82,4 @@
 <app-footer></app-footer>
 <!-- Ghost div for bottom navigation -->
 <div class="ghost" style="height: 88px;"></div>
-<app-bottom-navigation></app-bottom-navigation>
+<app-bottom-navigation class="bottom-sheet-container" [class.hidden]="!isScrollingUp"></app-bottom-navigation>

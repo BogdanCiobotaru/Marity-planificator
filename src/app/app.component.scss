@@ -10,7 +10,7 @@
   padding: 0 16px;
 
   .navigation-wrapper {
-    width: 940px;
+    width: 70%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -39,9 +39,9 @@
       gap: 48px;
 
       .navigation-item {
-        font-weight: 700;
-        font-size: 12px;
-        line-height: 14px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
         position: relative;
         cursor: pointer;
 
@@ -75,6 +75,19 @@
       @media (max-width: $max-width-for-mobile) {
         display: none;
       }
+    }
+
+    .burger-menu {
+      @media (min-width: $max-width-for-mobile) {
+        display: none;
+      }
+    }
+    @media (max-width: $max-width-for-mobile) {
+      width: 100%;
+    }
+
+    @media only screen and (max-width: 1024px) and (min-width: 768px) {
+      width: $max-content-width-for-tablet;
     }
   }
 }
@@ -183,98 +196,6 @@
     }
   }
 }
-
-// .try-free-container {
-//   padding: 54px 32px;
-//   display: flex;
-//   align-items: flex-end;
-//   justify-content: center;
-//   margin-top: 24px;
-//   height: 560px;
-//   background-image: url("/assets/images/candles_image.png");
-//   background-repeat: no-repeat;
-//   background-size: cover;
-
-//   // .try-free-content {
-//   //   width: 936px;
-
-//   //   .logo-label {
-//   //     display: flex;
-//   //     align-items: center;
-//   //     color: white;
-
-//   //     @media (max-width: $max-width-for-mobile) {
-//   //       display: none;
-//   //     }
-
-//   //     .small-marity-logo {
-//   //       margin-right: 8px;
-//   //     }
-//   //   }
-
-//   //   .text-button {
-//   //     margin-top: 24px;
-//   //     display: flex;
-//   //     justify-content: space-between;
-//   //     align-items: center;
-//   //     gap: 60px;
-
-//   //     .text-description {
-//   //       font-weight: 700;
-//   //       font-size: 32px;
-//   //       line-height: 38px;
-//   //       color: white;
-
-//   //       @media (max-width: $max-width-for-mobile) {
-//   //         text-align: center;
-//   //         font-weight: 700;
-//   //         font-size: 32px;
-//   //         line-height: 38px;
-//   //       }
-//   //     }
-
-//   //     .button-white {
-//   //       min-width: 178px;
-//   //       background: #ffffff;
-//   //       border-radius: 20px;
-//   //       padding: 16px 24px;
-//   //       font-weight: 500;
-//   //       font-size: 18px;
-//   //       line-height: 22px;
-//   //     }
-
-//   //     @media (max-width: $max-width-for-mobile) {
-//   //       flex-direction: column;
-//   //     }
-//   //   }
-//   // }
-
-//   @media (max-width: $max-width-for-mobile) {
-//     margin-top: 40px;
-//     // padding: 24px 16px;
-//   }
-// }
-
-// .phones-swiper {
-//   .swiper-wrapper {
-//     transition-timing-function: linear;
-//     padding: 53px;
-
-//     .swiper-slide {
-//       width: auto;
-
-//       .phone-frame {
-//         @media (max-width: $max-width-for-mobile) {
-//           height: 487px;
-//         }
-//       }
-
-//       &:nth-child(odd) {
-//         margin-top: 53px;
-//       }
-//     }
-//   }
-// }
 
 .schedule-for-mobile {
   height: 215px;
@@ -409,5 +330,18 @@
 .ghost {
   @media (min-width: $max-width-for-mobile) {
     display: none;
+  }
+}
+
+.bottom-sheet-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: transform 0.3s;
+  z-index: 1;
+
+  &.hidden {
+    transform: translateY(100%);
   }
 }
