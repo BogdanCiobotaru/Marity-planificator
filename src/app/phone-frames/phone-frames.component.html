@@ -4,10 +4,11 @@
         <div class="tit-wrapper">
             <div class="title">{{phoneFrame.title}}</div>
             <div class="description">{{phoneFrame.description}}</div>
-            <div *ngIf="phoneFrame.mobileDescr" class="mob-des">{{phoneFrame.mobileDescr}}</div>
-            <button class="button-start" *ngIf="phoneFrame.buttonText">{{phoneFrame.buttonText}} <img
+            <button class="button-start"
+                *ngIf="phoneFrame.buttonText && phoneFrame.showOnMobile">{{phoneFrame.buttonText}}<img
                     [src]="phoneFrame.buttonArrow" alt=""></button>
+            <div *ngIf="phoneFrame?.mobileDescr" class="no-button-text">{{phoneFrame.mobileDescr}}</div>
         </div>
-        <img class=" phone-image" [src]="phoneFrame.pictureSrc" alt="phone_picture">
+        <div class="image-wrapper"><img class="phone-image" [src]="phoneFrame.pictureSrc" alt="phone_picture"></div>
     </div>
 </div>
